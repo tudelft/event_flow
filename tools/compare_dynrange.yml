@@ -1,0 +1,17 @@
+experiment: Default
+
+data:
+    path: datasets/data/training/
+    mode: events # events/time
+
+loader:
+    batch_size: 1
+    resolution: [128, 128] # H x W
+    augment: []
+    gpu: 0
+
+hot_filter:
+    enabled: False
+    max_px: 100
+    min_obvs: 5
+    max_rate: 0.8

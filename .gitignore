@@ -1,0 +1,7 @@
+results_inference/
+trained_models/
+__pycache__/
+mlruns/
+.vscode/
+*.pyc
+venv/

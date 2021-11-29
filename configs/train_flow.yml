@@ -1,0 +1,49 @@
+experiment: Default
+
+data:
+    path: datasets/data/training/
+    mode: events # events/time
+    window: 1000 # events/time
+    window_loss: 10000 # events
+
+model:
+    name: FireNet # EVFlowNet/*FireFlowNet/*FireNet/E2VID/RecEVFlowNet
+    encoding: cnt # voxel/cnt
+    round_encoding: False # for voxel encoding
+    norm_input: False # normalize input
+    num_bins: 2
+    base_num_channels: 32
+    kernel_size: 3
+    activations: [relu, Null] # activations for ff and rec neurons
+    mask_output: True
+
+spiking_neuron: Null
+    
+loss:
+    flow_regul_weight: 0.001
+    clip_grad: 100.0 # set to Null to disable
+    overwrite_intermediate: False
+
+optimizer:
+    name: Adam
+    lr: 0.0002
+
+loader:
+    n_epochs: 100
+    batch_size: 8
+    resolution: [128, 128] # H x W
+    augment: ["Horizontal", "Vertical", "Polarity"]
+    augment_prob: [0.5, 0.5, 0.5]
+    gpu: 0
+
+vis:
+    verbose: True
+    enabled: False
+    px: 400
+    store_grads: False
+
+hot_filter:
+    enabled: False
+    max_px: 100
+    min_obvs: 5
+    max_rate: 0.8

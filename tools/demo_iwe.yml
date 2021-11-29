@@ -1,0 +1,25 @@
+experiment: Default
+
+data:
+    path: datasets/data/IWE/
+    mode: events # events/time
+    window: 40000 # events/time
+
+loader:
+    batch_size: 1
+    resolution: [180, 240] # H x W
+    augment: []
+    gpu: 0
+
+loss:
+    flow_regul_weight: 0.0
+    overwrite_intermediate: False
+
+vis:
+    px: 400
+
+hot_filter:
+    enabled: True
+    max_px: 100
+    min_obvs: 5
+    max_rate: 0.8

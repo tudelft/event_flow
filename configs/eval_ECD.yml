@@ -1,0 +1,31 @@
+data:
+    path: datasets/data/ECD/
+    mode: events # events
+    window: 15000 # events
+    window_eval: 15000 # events
+
+model:
+    mask_output: True
+
+metrics:
+    name: [FWL, RSAT]  # FWL, RSAT
+    flow_scaling: 128
+
+loader:
+    batch_size: 1
+    resolution: [180, 240] # H x W
+    augment: []
+    gpu: 0
+
+vis:
+    enabled: True
+    px: 400
+    bars: True
+    activity: False
+    store: False
+
+hot_filter:
+    enabled: True
+    max_px: 100
+    min_obvs: 5
+    max_rate: 0.8
