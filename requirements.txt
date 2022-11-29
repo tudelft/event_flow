@@ -4,6 +4,7 @@ PyYAML==5.3.1
 numpy==1.19.2
 pandas
 h5py==2.10.0
+hdf5plugin==3.3.1
 opencv-python==4.4.0.44
 pre-commit
 matplotlib==3.3.2

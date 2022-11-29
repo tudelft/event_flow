@@ -1,5 +1,6 @@
 import os
 import h5py
+import hdf5plugin
 import numpy as np
 
 import torch
