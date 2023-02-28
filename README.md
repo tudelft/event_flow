@@ -70,7 +70,7 @@ In this work, we use multiple datasets:
 - `event_flow/datasets/data/ECD`: [Event-Camera Dataset](http://rpg.ifi.uzh.ch/davis_data.html) (Mueggler, IJRR'17)
 - `event_flow/datasets/data/HQF`: [High Quality Frames](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123720528.pdf) (Stoffregen and Scheerlinck, ECCV'20)
 
-These datasets can be downloaded in the expected HDF5 data format from [here](https://surfdrive.surf.nl/files/index.php/s/4xXLV89pt2IphnB), and are expected at `event_flow/datasets/data/` (as shown above). 
+These datasets can be downloaded in the expected HDF5 data format from [here](https://1drv.ms/u/s!Ah0kx0CRKrAZjx-EEIzfo8iqBDro?e=TIoxG9), and are expected at `event_flow/datasets/data/` (as shown above). 
 
 Download size: 19.4 GB. Uncompressed size: 94 GB.
 
@@ -78,7 +78,7 @@ Details about the structure of these files can be found in `event_flow/datasets/
 
 ### Download models
 
-The pretrained models can be downloaded from [here](https://surfdrive.surf.nl/files/index.php/s/EX55MmYrUB8ExVx), and are expected at `event_flow/mlruns/`. 
+The pretrained models can be downloaded from [here](https://1drv.ms/u/s!Ah0kx0CRKrAZjyD2MUxoRQQ-O0TI?e=MUlhCx), and are expected at `event_flow/mlruns/`. 
 
 In this project we use [MLflow](https://www.mlflow.org/docs/latest/index.html#) to keep track of the experiments. To visualize the models that are available, alongside other useful details and evaluation metrics, run the following from the home directory of the project:
 
