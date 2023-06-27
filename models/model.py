@@ -690,6 +690,7 @@ class LIFFireFlowNet(FireNet):
     ff_neuron = ConvLIF
     rec_neuron = ConvLIF
     residual = False
+    w_scale_pred = 0.01
 
 
 class LeakyFireFlowNet(FireNet):
