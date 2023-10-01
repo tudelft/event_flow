@@ -26,7 +26,7 @@ loss:
 
 optimizer:
     name: Adam
-    lr: 0.0002
+    lr: 0.0002  # 5e-5 for RNNRecEVFlowNet
 
 loader:
     n_epochs: 100
